@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87E3CD5A-0B25-4548-B94B-650EC5CB7B08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YesEscape</RootNamespace>
+    <AssemblyName>YesEscape</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>yesescape.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dorito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dorito.Designer.cs">
+      <DependentUpon>Dorito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Escape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Escape.Designer.cs">
+      <DependentUpon>Escape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="escape_notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="escape_notification.Designer.cs">
+      <DependentUpon>escape_notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FakeBSoD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FakeBSoD.Designer.cs">
+      <DependentUpon>FakeBSoD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
+    <Compile Include="popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="popup.Designer.cs">
+      <DependentUpon>popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dorito.resx">
+      <DependentUpon>Dorito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Escape.resx">
+      <DependentUpon>Escape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="escape_notification.resx">
+      <DependentUpon>escape_notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FakeBSoD.resx">
+      <DependentUpon>FakeBSoD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="popup.resx">
+      <DependentUpon>popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dorito_payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eating_sperm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FREE ROBLOX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free_solaris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\furry_headpats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\javafox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\javafox2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nazar_skid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%27%27proof%27%27_of_silver_skidding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\say gex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdfsdfsdfsdy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensist2K05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silence..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silence_house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tspmo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tspmo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tspmo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Безымянный.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom_5_thumbnails.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freedom_at_last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noise..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noise_quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidr_griffin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silence_quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skid_from_salinewin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skidding_centre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solarah_no_scam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8685384ea4e785bace94b02f9f0c9197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\998bm9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artidickber.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8429942830ee706352fa51d1af23d503.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dating coach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geometry_dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u_ents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\who_will_win_w11_or_lejbl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\who_will_win_wxp_or_ponik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you_have_been_dinde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pussy destroyer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2024-12-01-12-02-17-78_50ef9f5a0f3fc24b6f0ffc8843167fe4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iamgoon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iamgoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protegent_bsod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oops_my_system_crashed.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="yesescape.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
